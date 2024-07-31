@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora baseada em Funções</title>
+</head>
+<body>
+    <script>
+          operacao = parseInt(prompt('Escolha uma das operações: \n1: Adição \n 2: Subtração\n3: Multiplicação\n 4: Divisão'))
+          x = parseInt(prompt('Digite o primeiro número: '))
+          y = parseInt(prompt('Digite o segundo numero: '))
+          
+          switch(operacao){
+            case 1: adicao(x,y)
+            break
+            case 2: subtracao(x,y)
+            break
+            case 3: multiplicao(x,y)
+            break
+            case 4: divisao(x,y)
+            break
+          }
+
+          function adicao(a,b){
+             resultado = a+b
+            return alert('O resultado é: '+ resultado)
+          }
+          function subtracao(a,b,resultado){
+            resultado = a-b
+            return alert('O resultado é: '+ resultado)
+          }
+          function multiplicao(a,b,resultado){
+            resultado = a*b
+            return alert('O resultado é: '+ resultado)
+          }
+          function divisao(a,b,resultado){
+            if(b!=0){
+            resultado = a/b
+            return alert('O resultado é: '+ resultado)
+            }else{
+                return alert('Não é possivel dividir números por zero.')
+            }
+            
+          }
+
+          
+
+    </script>
+</body>
+</html>
