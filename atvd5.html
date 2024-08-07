@@ -1,0 +1,27 @@
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Leitor de Números</title>
+      </head>
+      <body>
+        <script>
+            alert('O Leitor de números irá ler 10 números que o usuário digitar, e dizer sobre cada um se é positivo ou não.')
+
+            for(n=0;n<10;n++){
+                //A variavel é 'n' é = número de vezes que a pergunta vai se repetir (até 10 vezes)
+                a = prompt('Digite um número: ')
+                //a várivavel 'a', lê os números
+                if(a<0){
+                    alert(a+' É Negativo!')
+                }else if(a>=0 ){
+                    alert(a+' É Positivo!')
+                }else{
+                    alert('Erro.') 
+                }
+             a++
+            }
+        </script>
+      </body>
+      </html>
