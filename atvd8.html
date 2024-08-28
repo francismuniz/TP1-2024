@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atv. 8</title>
+</head>
+<script>
+    numero = []
+    numero = Math.random()*100
+    numero = parseInt(numero)
+    let tent = prompt('Tente adivinhar o número de um a 100: ')
+
+    do{
+        if(tent < numero){
+            alert('O numero é maior que este!')
+           tent = prompt('Tente adivinhar o número de um a 100: ')
+        }
+        else if(tent > numero){
+            alert('O numero é menor que este!')
+           tent = prompt('Tente adivinhar o número de um a 100: ')
+        }
+    }while(tent != numero)
+    
+    alert('Você acertou!')
+    
+</script>
+<body>
+</body>
+</html>
