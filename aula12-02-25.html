@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="script.js">
+
+    <style>
+        button:hover{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Fulano de Tal</h1>
+        <img src="https://th.bing.com/th/id/OIP.1SJpm2WKoARle0G1qr715AHaHa?rs=1&pid=ImgDetMain" alt="" height="100px">
+        <p><input type="file" id="choosefile"></p>
+
+        <p>
+            <form action="">
+            <label for= "nascimento"> Data de Nascimento <span class="nascimento"></span></label>
+            <button onclick="nascimento()" class="botao">Enviar</button>
+
+            <p> 
+                <form action="">
+                    <label for= "cidade"> Cidade: <span class="cidade"></span></label>
+                    <button onclick="cidade()" class="botao">Enviar</button>
+            </p>
+        </form>
+        <p>
+            <h2>Passatempos:</h2>
+            <button id="editarLista">editar</button>
+            <ul>
+                <li><label for="passatempo"> <span class="passatempo"></span></label></li>
+                <li>Jogar</li>
+                <li>Assistir</li>
+            </ul>
+            <button onclick="passatempo()">Incluir</button>
+        </p>
+        
+    </section>
+    
+</body>
+<script>
+function nascimento(){
+    const nascimento = document.querySelector(".nascimento")
+    nascimento.innerText = "20 de Agosto, 2000"
+}
+
+function cidade(){
+    const cidade = document.querySelector(".cidade")
+    cidade.innerText = "Bobolandia"
+}
+
+function passatempo(){
+    const passatempo = document.querySelector(".passatempo")
+    passatempo.innertext = "Sair"
+}
+</script>
+</html>
