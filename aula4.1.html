@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculo do IMC</h1>
+    <input type="text" id="txtAltura" placeholder="Digite a Altura">
+    <input type="text" id="txtPeso" placeholder="Digite o Peso">
+    <input type="button" id="btnCalcular" value="Calcular">
+    <hr>
+    <div id="divIMC"></div>
+
+
+    <script>
+        let botao = document.getElementById('btnCalcular')
+        let altura = document.getElementById('txtAltura')
+        let peso = document.getElementById('txtPeso')
+        let imc = document.getElementById('divIMC')
+        
+        botao.addEventListener('click', ()=>{
+           const calculo = (peso.value/altura.value**2)*100
+
+           divIMC.innerHTML = 'O valor é '+calculo
+        })
+    </script>
+</body>
+</html> 
