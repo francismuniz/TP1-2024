@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div#area1{
+            background: red;
+            width: 156px;
+            height: 56px;
+            line-height: 50px;
+            text-align: center;
+        }
+        div#area2{
+            background: blue;
+            width: 156px;
+            height: 56px;
+            line-height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div id="area1">Clique em mim! </div>
+<p></p>
+
+<div id="area2">Passe o mouse!</div>
+
+<script>
+    let botao1 = document.getElementById('area1')
+    botao1.addEventListener('mousedown', ()=>{
+        area1.innerHTML = 'Solte-me!'
+        area1.style.backgroundColor = '#1ec5e5'
+    })
+    botao1.addEventListener('mouseup', ()=>{
+        area1.innerHTML = 'Obrigado'
+        area1.style.backgroundColor = '#f04028'
+    })
+
+    let botao2 = document.getElementById('area2')
+    botao2.addEventListener('mouseover', ()=>{
+        area2.innerHTML = 'Obrigado'
+    })
+    botao2.addEventListener('mouseout', ()=>{
+        area2.innerHTML = 'Passe o Mouse!'
+    })
+
+</script>
+
+</body>
+
+</html>
